@@ -2,5 +2,8 @@
     <string name="app_name">CoastRent</string>
     <string name="HowHour">Сколько часов</string>
     <string name="Coast">2000 руб/час</string>
-    <string name="Sale">скидка</string>
+    <string name="SaleStaticText">скидка</string>
+    <string name="priceActivityButtonText">Результат</string>
+    <string name="saleText">Ваша скидка %d</string>
+    <string name="resultText">%d</string>
 </resources>

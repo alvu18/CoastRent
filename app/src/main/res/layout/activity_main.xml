@@ -7,9 +7,7 @@
 
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
@@ -19,23 +17,26 @@
 
 
         <LinearLayout
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editHourText"
                 android:layout_width="262dp"
                 android:layout_height="60dp"
                 android:hint="@string/HowHour" />
 
 
 
-            <TextView
+         <TextView
+                android:id="@+id/SaleText"
                 android:layout_width="130dp"
                 android:layout_height="44dp"
                 android:gravity="center"
-                android:text="@string/Coast"
                 android:textSize="16dp"
+             android:text="@string/Coast"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -43,39 +44,50 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <SeekBar
-            android:id="@+id/discountBar"
+            android:id="@+id/saleBar"
             style="@style/Widget.AppCompat.SeekBar.Discrete"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:indeterminate="false"
-            android:max="25"
+            android:max="50"
             android:progress="5"
             android:progressTint="#9C27B0" />
         <TextView
-            android:id="@+id/discountText"
+            android:id="@+id/saleText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <TextView
+  <!--      <TextView
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/Sale"
+            android:text="@string/SaleStaticText"
             android:textSize="16dp"
             android:textStyle="bold"
 
-            />
+            />-->
     </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/priceActivityButton"
+                android:layout_marginTop="20dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/priceActivityButtonText" />
 
-
+        </LinearLayout>
 
     </LinearLayout>
 
